@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/default_profile.jpg'),
               ),
               Text(
-                'Rick',
+                'Rick Chen',
+                style: TextStyle(fontSize: 40.0, color: Colors.white),
               ),
             ],
           ),
