@@ -20,7 +20,38 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'Rick Chen',
-                style: TextStyle(fontSize: 40.0, color: Colors.white),
+                style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontSize: 40.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.phone, color: Colors.teal),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('(416)888-8888',
+                        style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0)),
+                  ],
+                ),
               ),
             ],
           ),
