@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.lightGreen,
         body: SafeArea(
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -31,26 +31,41 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                     fontFamily: 'Source Sans Pro',
                     fontSize: 20.0,
-                    color: Colors.teal.shade100,
+                    color: Colors.lightGreen.shade100,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
-                color: Colors.white,
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.lightGreen.shade100,
+                ),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.phone, color: Colors.teal),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('(416)888-8888',
-                        style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0)),
-                  ],
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.lightGreen),
+                  title: Text(
+                    '(416) 804-1799',
+                    style: TextStyle(
+                        color: Colors.lightGreen.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.lightGreen),
+                  title: Text(
+                    'rick@blankmemo.com',
+                    style: TextStyle(
+                        color: Colors.lightGreen.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0),
+                  ),
                 ),
               ),
             ],
